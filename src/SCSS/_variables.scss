@@ -1,0 +1,43 @@
+// Font families
+$font-family-heading-one: "Oswald", sans-serif;
+$font-family-heading-two: "Cousine", monospace;
+$font-family-heading-three: "Glegoo", serif;
+$font-family-body: "Lexend", sans-serif;
+
+// Font weights
+$font-weight-200: 200;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+// Colors
+
+$color-mustard: #e9c300;
+$color-blue-gray: #d2e2e4;
+$color-red: #d85151;
+
+// Neutrals
+$color-black: #000000;
+$color-gray-1: #333333;
+$color-gray-2: #5a5a5a;
+$color-gray-25: #8f8f8f;
+$color-gray-3: #8b90a7;
+$color-gray-4: #c9ced6;
+$color-gray-5: #dde1e8;
+$color-gray-6: #eff4f6;
+$color-gray-7: #fbfdff;
+$color-white: #ffffff;
+
+$color-transparent: transparent;
+
+// Breakpoint
+$breakpoint-mobile-small: 320;
+$breakpoint-mobile: 480;
+$breakpoint-tablet: 768;
+$breakpoint-desktop: 1024;
+$breakpoint-desktop-hd: 1400;
+$breakpoint-desktop-large: 1200;
+$breakpoint-desktop-hd: 1400;
+$breakpoint-desktop-larger: 1800;

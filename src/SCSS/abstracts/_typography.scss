@@ -1,0 +1,40 @@
+@use '../_variables' as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Glegoo:wght@400;700&family=Lexend:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap");
+
+body,
+input,
+textarea,
+select,
+button,
+::placeholder {
+   font-family: $font-family-body;
+   color: $color-gray-1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+   font-family: $font-family-heading-two;
+   margin-bottom: 1.5rem;
+   line-height: 1.5;
+   font-weight: $font-weight-700;
+}
+
+p,
+li {
+   font-family: $font-family-body;
+   font-weight: $font-weight-300;
+   margin: 1.5rem 0;
+}
+
+li {
+   margin: 0 0;
+}

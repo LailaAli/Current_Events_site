@@ -1,0 +1,68 @@
+// Responsive media queries
+// Use -up media queries when possible for efficient use of css
+// For basic media queries only use tablet-up to create simplicity
+@mixin mobile-small-up {
+   @media (min-width: #{$breakpoint-mobile-small}px) {
+      @content;
+   }
+}
+@mixin mobile-up {
+   @media (min-width: #{$breakpoint-mobile}px) {
+      @content;
+   }
+}
+@mixin mobile-down {
+   @media (max-width: #{$breakpoint-mobile - 1}px) {
+      @content;
+   }
+}
+@mixin tablet-up {
+   @media (min-width: #{$breakpoint-tablet}px) {
+      @content;
+   }
+}
+@mixin tablet-down {
+   @media (max-width: #{$breakpoint-tablet - 1}px) {
+      @content;
+   }
+}
+@mixin desktop-up {
+   @media (min-width: #{$breakpoint-desktop}px) {
+      @content;
+   }
+}
+@mixin desktop-down {
+   @media (max-width: #{$breakpoint-desktop - 1}px) {
+      @content;
+   }
+}
+@mixin desktop-large-up {
+   @media (min-width:  #{$breakpoint-desktop-large}px) {
+      @content;
+   }
+}
+@mixin desktop-large-down {
+   @media (max-width: #{$breakpoint-desktop-large - 1}px) {
+      @content;
+   }
+}
+@mixin desktop-hd-up {
+   @media (min-width:  #{$breakpoint-desktop-hd}px) {
+      @content;
+   }
+}
+@mixin desktop-hd-down {
+   @media (max-width: #{$breakpoint-desktop-hd - 1}px) {
+      @content;
+   }
+}
+@mixin desktop-larger-up {
+   @media (min-width:  #{$breakpoint-desktop-larger}px) {
+      @content;
+   }
+}
+@mixin desktop-larger-down {
+   @media (max-width: #{$breakpoint-desktop-larger - 1}px) {
+      @content;
+   }
+}
