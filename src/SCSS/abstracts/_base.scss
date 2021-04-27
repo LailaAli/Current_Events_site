@@ -3,6 +3,7 @@
 html {
    box-sizing: border-box;
    font-size: 62.5%;
+   overflow-x: hidden;
 }
 *,
 *:before,
@@ -15,4 +16,5 @@ html {
 body {
    min-height: 100vh;
    background: $color-gray-7;
+   overflow-x: hidden;
 }

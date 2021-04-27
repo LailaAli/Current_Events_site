@@ -1,0 +1,99 @@
+@use '../../SCSS/_variables' as *;
+@use '../../SCSS/mixins' as *;
+
+.archiveHeader {
+   margin: 0 -9999rem;
+   padding: 0 9999rem;
+   .blueBackground {
+      position: fixed;
+      margin: 0 -9999rem;
+      padding: 0 9999rem;
+      @include mobile-up {
+         background-color: $color-blue-gray;
+         min-height: 40rem;
+         max-height: 56.5rem;
+      }
+      @include tablet-up {
+         height: 56.5rem;
+      }
+   }
+
+   .leftSide {
+      display: none;
+
+      @include mobile-up {
+         display: block;
+         position: fixed;
+         top: 10rem;
+         left: 6.5rem;
+         min-height: 40rem;
+         max-height: 65rem;
+         width: 100%;
+         max-width: 55%;
+         background-color: $color-red;
+         // z-index: 1;
+      }
+      @include tablet-up {
+         top: 21rem;
+         height: 65rem;
+      }
+   }
+
+   .rightSide {
+      position: fixed;
+      min-height: 40rem;
+      width: 100%;
+      filter: grayscale(1);
+      background-image: url("~assets/images/pexels-august-de-richelieu-4427626.jpg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      @include mobile-up {
+         width: 70%;
+         top: 7rem;
+         right: 0;
+         filter: none;
+      }
+      @include tablet-up {
+         height: 68rem;
+      }
+   }
+
+   .text {
+      z-index: 4;
+      padding: 2rem;
+      position: absolute;
+      top: 10rem;
+      max-width: 80rem;
+      color: $color-white;
+      font-weight: $font-weight-500;
+      @include mobile-up {
+         top: 15rem;
+         left: 6.8rem;
+      }
+      @include tablet-up {
+         top: 30rem;
+      }
+      @include desktop-up {
+         left: 16rem;
+      }
+
+      .title {
+         font-family: $font-family-heading-one;
+         text-transform: uppercase;
+         @include mobile-up {
+            font-size: 5rem;
+         }
+         @include tablet-up {
+            font-size: 10rem;
+            line-height: 1em;
+         }
+      }
+
+      .titleDescription {
+         @include tablet-up {
+            font-size: 2.5rem;
+         }
+      }
+   }
+}
