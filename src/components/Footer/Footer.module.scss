@@ -1,0 +1,9 @@
+@use '../../SCSS/_variables' as *;
+@use '../../SCSS/mixins' as *;
+
+.footer {
+   position: fixed;
+   bottom: 3rem;
+   left: 3rem;
+   font-size: 1.2rem;
+}

@@ -1,0 +1,28 @@
+@use "../../SCSS/mixins" as *;
+@use '../../SCSS/variables' as *;
+
+.nav {
+   display: none;
+   @include tablet-up {
+      display: block;
+      position: absolute;
+      top: 78rem;
+      right: 3rem;
+      max-width: 65rem;
+      z-index: 999;
+      background-color: transparent;
+      ul {
+         @include tablet-up {
+            display: flex;
+            justify-content: space-between;
+            font-weight: $font-weight-500;
+            text-transform: capitalize;
+         }
+
+         li {
+            list-style: none;
+            margin-left: 1.5rem;
+         }
+      }
+   }
+}
