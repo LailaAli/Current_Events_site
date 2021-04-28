@@ -20,8 +20,28 @@
          }
 
          li {
+            position: relative;
             list-style: none;
             margin-left: 1.5rem;
+            &:after {
+               content: "";
+               position: absolute;
+               width: 4rem;
+               color: $color-mustard;
+               border-bottom: 6px solid;
+               top: -10px;
+               left: 0;
+               transform: scaleX(0);
+               transition: transform 250ms ease-in-out;
+               transform-origin: 0% 50%;
+            }
+            &:hover,
+            :focus,
+            :active {
+               &:after {
+                  transform: scaleX(1);
+               }
+            }
          }
       }
    }
