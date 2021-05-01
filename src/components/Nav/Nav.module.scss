@@ -1,12 +1,12 @@
 @use "../../SCSS/mixins" as *;
 @use '../../SCSS/variables' as *;
 
-.nav {
+.desktopNav {
    display: none;
    @include tablet-up {
       display: block;
       position: absolute;
-      top: 78rem;
+      top: 82rem;
       right: 3rem;
       max-width: 65rem;
       z-index: 999;
@@ -17,20 +17,22 @@
             justify-content: space-between;
             font-weight: $font-weight-500;
             text-transform: capitalize;
+            font-size: 1.8rem;
          }
 
          li {
             position: relative;
             list-style: none;
             margin-left: 1.5rem;
+            cursor: pointer;
             &:after {
                content: "";
                position: absolute;
-               width: 4rem;
-               color: $color-mustard;
-               border-bottom: 6px solid;
-               top: -10px;
-               left: 0;
+               width: 110%;
+               color: #e9c300;
+               border-bottom: 2px solid;
+               top: 11.5px;
+               right: -3px;
                transform: scaleX(0);
                transition: transform 250ms ease-in-out;
                transform-origin: 0% 50%;

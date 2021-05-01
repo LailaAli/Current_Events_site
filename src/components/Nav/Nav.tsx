@@ -16,7 +16,7 @@ const nav: INav[] = [
 
 const Nav: React.FC = () => {
    return (
-      <nav className={css.nav}>
+      <nav className={css.desktopNav}>
          <ul>
             {nav.map((item) => (
                <li key={item.label}>{item.label}</li>
