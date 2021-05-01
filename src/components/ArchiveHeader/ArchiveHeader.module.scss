@@ -24,10 +24,11 @@
       @include mobile-up {
          display: block;
          position: fixed;
-         top: 10rem;
+         top: 6rem;
          left: 6.5rem;
          min-height: 40rem;
-         max-height: 65rem;
+         max-height: 70rem;
+         height: 50rem;
          width: 100%;
          max-width: 55%;
          background-color: $color-red;
@@ -35,7 +36,7 @@
       }
       @include tablet-up {
          top: 21rem;
-         height: 65rem;
+         height: 70rem;
       }
    }
 
@@ -44,13 +45,13 @@
       min-height: 40rem;
       width: 100%;
       filter: grayscale(1);
-      background-image: url("~assets/images/pexels-august-de-richelieu-4427626.jpg");
+      background-image: url("~assets/images/colin-lloyd-hVyCzb_-4yw-unsplash.jpg");
       background-size: cover;
       background-position: top center;
       background-repeat: no-repeat;
       @include mobile-up {
-         width: 70%;
-         top: 7rem;
+         width: 65%;
+         top: 11rem;
          right: 0;
          filter: none;
       }
