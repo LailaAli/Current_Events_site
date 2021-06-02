@@ -1,0 +1,100 @@
+@use '../../SCSS/_variables' as *;
+@use '../../SCSS/mixins' as *;
+
+.blockOne {
+   position: absolute;
+   top: 40rem;
+   background-color: $color-mustard;
+   height: 80rem;
+   width: 100%;
+   padding-top: 5rem;
+   @include mobile-up {
+      top: 80rem;
+      height: 65rem;
+   }
+   @include tablet-up {
+      min-height: 60rem;
+      height: 60rem;
+      width: 100%;
+      top: 130rem;
+   }
+
+   .category {
+      display: block;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+   }
+
+   .articleTitle {
+      display: block;
+      margin-bottom: 1rem;
+   }
+
+   .articleExcerpt {
+      display: block;
+   }
+
+   .articleInfo {
+      padding-bottom: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      @include mobile-up {
+      }
+   }
+
+   .articleInfoBottom {
+      padding-bottom: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-top: 35rem;
+      @include mobile-up {
+      }
+   }
+
+   .imageTop {
+      background-image: url("~assets/images/pexels-rosemary-ketchum-1464213.jpg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      height: 30rem;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      @include mobile-up {
+         width: 65%;
+         min-height: 58.5rem;
+         right: 0;
+         left: initial;
+         top: -20rem;
+         max-width: 45.4rem;
+      }
+      @include tablet-down {
+      }
+   }
+
+   .imageBottom {
+      background-image: url("~assets/images/pexels-august-de-richelieu-4427626.jpg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      height: 30rem;
+      width: 100%;
+      position: absolute;
+      top: 76rem;
+      right: 0;
+      left: 0;
+      @include mobile-up {
+         width: 65%;
+         max-width: 45.4rem;
+         min-height: 58.5rem;
+         top: initial;
+         right: initial;
+         bottom: -400px;
+         left: 0;
+      }
+      @include tablet-down {
+      }
+   }
+}

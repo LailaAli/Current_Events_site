@@ -5,7 +5,7 @@
    margin: 0 -9999rem;
    padding: 0 9999rem;
    .blueBackground {
-      position: fixed;
+      position: absolute;
       margin: 0 -9999rem;
       padding: 0 9999rem;
       @include mobile-up {
@@ -23,7 +23,7 @@
 
       @include mobile-up {
          display: block;
-         position: fixed;
+         position: absolute;
          top: 6rem;
          left: 6.5rem;
          min-height: 40rem;
@@ -41,7 +41,7 @@
    }
 
    .rightSide {
-      position: fixed;
+      position: absolute;
       min-height: 40rem;
       width: 100%;
       filter: grayscale(1);

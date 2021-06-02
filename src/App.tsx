@@ -4,6 +4,7 @@ import Nav from "./components/Nav/Nav";
 import ArchiveHeader from "./components/ArchiveHeader/ArchiveHeader";
 import Footer from "./components/Footer/Footer";
 import MobileNav from "components/MobileNav/MobileNav";
+import BlockOne from "components/BlockOne/BlockOne";
 
 function App() {
    return (
@@ -11,6 +12,7 @@ function App() {
          <MobileNav />
          <Nav />
          <ArchiveHeader />
+         <BlockOne />
          <Footer />
       </div>
    );
